@@ -1,0 +1,28 @@
+class bank:
+
+    def fd_return(self):
+
+        amount=int(input("Enter amout for fd: "))
+        print("Returns are 7% after a year ")
+        returns=(amount*7)/100
+        print("Returns are: ",returns)
+        total_r=returns+amount
+        print("Total returns are : ",total_r)
+
+    def loan(self):
+
+        loan_amt=int(input("Enter loan amount: "))
+        tenure=int(input("Enter tenure : "))
+        monthly_tenure=tenure*12
+        montly_amt=loan_amt/monthly_tenure
+        print("monthly loan amout will be: ",montly_amt)
+
+bank1=bank()
+print("1. fd \n 2. loan")
+choice=int(input("Enter choice: "))
+if choice==1:
+    bank1.fd_return()
+elif choice==2:
+    bank1.loan()
+else:
+    print("try later.")

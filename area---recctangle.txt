@@ -1,0 +1,57 @@
+class rect:
+    length=0
+    breadth=0
+    height=0
+
+    def area(self):
+        ara=(self.length)*(self.breadth)
+        print("Area of recctangle is ",ara," sq cm")
+
+    def vol(self):
+        vol=(self.length)*(self.breadth)*(self.height)
+        print("volume of rectangle is ",vol," cubic cm")
+
+class triangle:
+    base=0
+    height=0
+
+    def area(self):
+        ara1=(1/2)*(self.base)*(self.height)
+        print("Area of triangle is ",ara1," sq cm")
+
+    def vol(self):
+        vol1=(1/3)*(self.base)*(self.height)
+        print("Volume of triangle is ",vol1," cubic cm")
+
+triangle1=triangle()
+rect1=rect()
+print("1. triangle  ---  a. area \n b. volume")
+print("2. rectangle ------ a. area \n b. volume")
+triangle1.choice=int(input("Enter choice: "))
+if triangle1.choice==1:
+    triangle1.height = int(input("Enter height of "))
+    triangle1.base = int(input("Enter base of "))
+    print("11. area \n 12. volume")
+    cho=int(input("Enter choice: "))
+    if cho==11:
+        triangle1.area()
+    elif cho==12:
+        triangle1.vol()
+    else:
+        print("Try later")
+
+elif rect1.choice==2:
+    rect1.length= int(input("Enter length: "))
+    rect1.height = int(input("Enter height of "))
+    rect1.breadth = int(input("Enter breadth of "))
+    print("11. area \n 12. volume")
+    cho1 = int(input("Enter choice: "))
+    if cho1 == 11:
+        rect1.area()
+    elif cho1 == 12:
+        rect1.vol()
+    else:
+        print("Try later")
+
+else:
+    print("try later")

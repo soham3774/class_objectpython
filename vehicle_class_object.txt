@@ -1,0 +1,14 @@
+class vehicle:
+    def __init__(self,name):
+        self.name=name
+    def pricedownpayment(self):
+        price=int(input("Enter price: "))
+        down=(price*20)/100
+        print("downpayment is: ",down)
+        value=price-down
+        emi=value/36
+        print("Emi according to 3 years: " ,emi,"per month")
+vehicle1=vehicle("bmw 520d")
+print("Name of car is: ",vehicle1.name)
+vehicle1.pricedownpayment()
+
